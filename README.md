@@ -39,7 +39,8 @@ A full-stack **ASP.NET Core MVC application** to manage employee records and per
 ## 📸 Screenshots
 
 ![image alt](https://github.com/manixme/Employee-Appraisal-MVC/blob/main/Screenshot%20(336).png?raw=true)
-
+![image alt](https://github.com/manixme/Employee-Appraisal-MVC/blob/main/Screenshot%20(339).png?raw=true)
+![image alt](https://github.com/manixme/Employee-Appraisal-MVC/blob/main/Screenshot%20(339).png?raw=true)
 ---
 
 ## 🛠️ How to Run
