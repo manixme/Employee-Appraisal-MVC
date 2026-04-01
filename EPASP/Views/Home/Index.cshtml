@@ -1,0 +1,41 @@
+﻿@model IEnumerable<EPASP.Models.Employee>
+<h1>Employee Performance </h1>
+
+<a asp-action="Add"> Add </a>
+
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Department</th>
+			<th>Salary</th>
+			<th>Rating</th>
+			<th>IsActive</th>
+			<th>Options</th>
+			<th>Options</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.Id</td>
+				<td>@item.Name</td>
+				<td>@item.Department</td>
+				<td>@item.Salary</td>
+				<td>@item.Rating</td>
+				<td>@(item.IsActive ? "Active" : "Inactive")</td>
+				<td>
+					<a asp-action="Edit" asp-route-Id=@item.Id>Update</a>
+				</td>
+				<td>
+					<a asp-action="Delete" asp-route-Id=@item.Id>Delete</a>
+				</td>
+				</tr>
+			}
+		
+	</tbody>
+</table>

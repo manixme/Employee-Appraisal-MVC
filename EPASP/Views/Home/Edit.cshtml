@@ -1,0 +1,35 @@
+﻿@model EPASP.Models.Employee
+<h1>Update Snacks</h1>
+
+<form asp-action="Add" method="post">
+	<div>
+		<label asp-for="Name"></label>
+		<input asp-for="Name" Placeholder="Enter Name Of the Employee"/>
+		</div>
+	<div>
+		<label asp-for="Department"></label>
+		<input asp-for="Department" />
+	</div>
+	<div>
+		<label asp-for="Salary"></label>
+		<input asp-for="Salary" />
+	</div>
+
+	<div>
+		<select asp-for="Rating" class="form-control"style="width: 150px;">
+    <option value="">-- Select Rating --</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+	</div>
+	<div>
+		<label asp-for="IsActive"></label>
+		<input asp-for="IsActive" />
+	</div>
+
+
+<button type="submit">Update</button>
+</form>
